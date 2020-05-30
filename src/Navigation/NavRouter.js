@@ -6,6 +6,7 @@ import About from '../Pages/About';
 import ItemMaster from '../Pages/ItemMaster';
 import SignIn from '../Login/SignIn';
 import Register from '../Login/Register';
+import ItemUnits from '../Pages/Maintenance/ItemUnits';
 
 /* Reminders: BrowserRouter must be at the top level  */
 
@@ -16,6 +17,7 @@ const NavRouter = () => {
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/itemmaster" component={ItemMaster} />
+        <Route exact path="/itemunits" component={ItemUnits} />
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/register" component={Register} />
       </Switch>

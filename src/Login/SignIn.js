@@ -179,7 +179,15 @@ export function Copyright() {
 }
 
 const SignIn = () => {
-  return <CardContext copyright={true} medialogo={true} headerText={true} />;
+  return (
+    <CardContext
+      footerContext={Copyright}
+      mediaLogo={MediaLogo}
+      headerContext={HeaderText}
+      source={'signin'}
+      FormContext={FormContext}
+    />
+  );
 };
 
 export default SignIn;

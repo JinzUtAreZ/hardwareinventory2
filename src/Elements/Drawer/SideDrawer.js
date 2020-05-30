@@ -103,6 +103,7 @@ export default function PersistentDrawerLeft() {
     ['signin', 'Sign In'],
     ['register', 'Register'],
     ['itemmaster', 'Item Master'],
+    ['itemunits', 'Item Units'],
   ];
 
   const Link2Name = {
@@ -134,9 +135,9 @@ export default function PersistentDrawerLeft() {
             title: 'Item Master',
           },
           {
-            link: '/pears',
-            key: 'pears',
-            title: 'Pears',
+            link: '/itemunits',
+            key: 'itemunits',
+            title: 'Item Units',
           },
         ],
       },

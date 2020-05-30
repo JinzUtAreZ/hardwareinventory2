@@ -122,12 +122,11 @@ export default function CustomTables(props) {
 
   ////// search actions ///////
   const handleSearchChange = (value) => {
-    console.log('tablesaearch');
     //setSearchInput({ ...searchInput, [key]: value });
     const filterData = datas.filter((data) => {
       return data.name.toLowerCase().includes(value.toLowerCase());
     });
-    console.log(filterData);
+    //console.log('filter-customtables'filterData);
     setFiltered(filterData);
     setPage(0);
     //setFiltered({ ...rows.filter });
@@ -142,7 +141,7 @@ export default function CustomTables(props) {
             searchable={searchable}
             searchPlaceholder={searchPlaceholder}
             handleSearchChange={handleSearchChange}
-            searchInput={searchInput}
+            searchInput={filtered}
           />
           <TableContainer>
             <Table className={classes.table}>

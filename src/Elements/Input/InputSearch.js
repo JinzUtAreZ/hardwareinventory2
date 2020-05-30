@@ -8,7 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import CloseIcon from '@material-ui/icons/Close';
 
-import { handleSearchChange } from '../Tables/CustomTables';
+//import { handleSearchChange } from '../Tables/CustomTables';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,18 +33,18 @@ const useStyles = makeStyles((theme) => ({
 export default function InputSearch(props) {
   ////// aayusin ko pa to
   const {
-    value,
-    label,
+    //value,
+    //label,
     searchPlaceholder,
     handleSearchChange,
-    searchInput,
+    //searchInput,
   } = props;
   const classes = useStyles();
 
   // console.log(searchPlaceholder);
   const handleChange = (event) => {
     const { value } = event.target;
-    console.log('search-input', value);
+    //console.log('inputsearch', value);
     handleSearchChange(value);
   };
 

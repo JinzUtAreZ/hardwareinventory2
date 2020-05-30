@@ -64,8 +64,7 @@ const ItemMaster = () => {
       <CustomTable
         selectRow={true}
         newPaging={true}
-        //sortOrder={true}
-
+        sortOrder={true}
         headCells={headCells}
         datas={rows}
         load={load}
